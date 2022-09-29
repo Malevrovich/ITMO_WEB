@@ -1,0 +1,112 @@
+.radio-input-block {
+    background-color: #171717;
+}
+
+.buttons-holder {
+    height: 70%;
+    width: 95%;
+
+    min-height: 20vw;
+
+    display: grid;
+    grid-template-columns: repeat(5, 4vw);
+    grid-template-rows: repeat(5, 4vw);
+
+    align-items: center;
+    justify-content: center;
+}
+
+.radio-button:nth-child(1) {
+    grid-row: 1;
+    grid-column: 3;
+}
+
+.radio-button:nth-child(2) {
+    grid-row: 2;
+    grid-column: 2;
+}
+
+.radio-button:nth-child(3) {
+    grid-row: 2;
+    grid-column: 4;
+}
+
+.radio-button:nth-child(4) {
+    grid-row: 3;
+    grid-column: 1;
+}
+
+.radio-button:nth-child(5) {
+    grid-row: 3;
+    grid-column: 3;
+}
+
+.radio-button:nth-child(6) {
+    grid-row: 3;
+    grid-column: 5;
+}
+
+.radio-button:nth-child(7) {
+    grid-row: 4;
+    grid-column: 2;
+}
+
+.radio-button:nth-child(8) {
+    grid-row: 4;
+    grid-column: 4;
+}
+
+.radio-button:nth-child(9) {
+    grid-row: 5;
+    grid-column: 3;
+}
+
+.radio-button {
+    height: 4vw;
+    width: 4vw;
+    position: relative;
+}
+
+.radio-button input {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    appearance: none;
+
+    background-color: #272727;
+}
+
+.radio-button input:checked {
+    background-color: #A4A4A4;
+}
+
+.radio-button label {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@media screen and (max-width: 700px) {
+    .buttons-holder {
+        min-height: 50vw;
+
+        display: grid;
+        grid-template-columns: repeat(5, 10vw);
+        grid-template-rows: repeat(5, 10vw);
+    }
+
+    .radio-input-block {
+        min-height: 65vw;
+        width: 65vw;
+    }
+
+    .radio-button {
+        height: 10vw;
+        width: 10vw;
+    }
+
+    .radio-input-block .block-title {
+        margin: 10px;
+    }
+}
